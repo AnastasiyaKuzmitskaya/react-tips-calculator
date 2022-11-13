@@ -11,7 +11,7 @@ export const CustomStyles: StylesConfig<IOption> = {
     cursor:"pointer",
     padding: "18px 180px",
     border: "none",
-    
+    textAlign:"center",
   }),
   indicatorSeparator: (styles) => ({
     ...styles,

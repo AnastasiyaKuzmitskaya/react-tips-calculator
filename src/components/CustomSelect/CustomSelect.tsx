@@ -20,7 +20,7 @@ export const CustomSelect = ({ setTips, tips }: IProps) => {
   };
 
   const getTips = () => {
-    return tips ? options.find((option) => option.value === tips) : options[0];
+    return  options.find((option) => option.value === tips) ;
   };
 
   return (

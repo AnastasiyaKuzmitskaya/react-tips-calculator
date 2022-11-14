@@ -3,7 +3,7 @@ import { IOption } from "../../types/type";
 import { CustomStyles } from "./selectStyle";
 
 interface IProps {
-  onChange: (tips: number) => void;
+  setTips: (tips: number) => void;
   tips: number;
 }
 
@@ -13,14 +13,10 @@ export const options: IOption[] = [
   { value: 20, label: "20%" },
 ];
 
-export const CustomSelect = ({ onChange, tips }: IProps) => {
-  const options: IOption[] = [
-    { value: 10, label: "10%" },
-    { value: 15, label: "15%" },
-    { value: 20, label: "20%" },
-  ];
+export const CustomSelect = ({ setTips, tips }: IProps) => {
+ 
   const handleChange = (option: SingleValue<IOption>) => {
-    if (option) onChange(option.value);
+    if (option) setTips(option.value);
   };
 
   const getTips = () => {

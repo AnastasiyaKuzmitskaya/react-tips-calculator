@@ -37,7 +37,7 @@ export const Form = () => {
         onChange={setPersons}
         placeholder="Enter  persons"
       />
-      <CustomSelect onChange={setTips} tips={tips} />
+      <CustomSelect setTips={setTips} tips={tips} />
       <TotalBill>Total: {total.toFixed(2)}$</TotalBill>
       <Button isDisabled={isDisabled} />
     </StyledForm>
